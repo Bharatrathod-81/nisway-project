@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-##Features
+## Features
+Home page with a list of all content news
 
 ## Available Scripts
 
