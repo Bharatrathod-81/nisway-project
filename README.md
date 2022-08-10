@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
 ## Features
-Home page with a list of all content news
-Single product listing component
+- Home page with a list of all content news
+- Single product listing component
 Header component
 
 ## Pages
