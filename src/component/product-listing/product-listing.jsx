@@ -8,8 +8,8 @@ export const ProductListing = ({ data }) => {
             {data?.map(e =>
                 <Link className="card-body" to={`/singlePage/${e.id}`}>
                     <div className="title-body">
-                        <h1>{e.title.rendered}</h1>
-                        {e.parsely.meta.author.map(a => <strong>{a.name}</strong>)}
+                        <h1 className="heading">{e.title.rendered}</h1>
+                        {e.parsely.meta.author.map(a => <strong className="authors-name">{a.name}</strong>)}
                         <p className="date">{e.date}</p>
                     </div>
                     <div className="excerpt-body">

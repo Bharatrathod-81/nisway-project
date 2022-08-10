@@ -1,24 +1,20 @@
-import { useReducer, createContext, useContext } from "react";
+import { useEffect } from "react";
+import { useState , createContext, useContext } from "react";
+import { GetNews } from "../services/services";
+
 
 const dataContext = createContext();
 
 export const DataContextProvider = ({ children }) => {
 
-    const dataHandler = (state, {type, payload}) => {
-        switch (type) {
-            case "GET_NEWS":
-                return {...state,newsData:payload};
-            default:
-                return state;
-        }
-    }
+    const [data,setData] = useState([]);
 
-    const [data,dispatchData] = useReducer(dataHandler,{
-        newsData:[]
-    })
+    useEffect(() => {
+        GetNews(setData)
+    },[])
 
     return(
-        <dataContext.Provider value={{data,dispatchData}}>
+        <dataContext.Provider value={{data,setData}}>
             { children }
         </dataContext.Provider>
     )

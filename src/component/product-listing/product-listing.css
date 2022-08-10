@@ -21,6 +21,10 @@
     text-align: start;
 }
 
+.heading, .authors-name{
+    color: black;
+}
+
 .date{
     color: gray;
 }
