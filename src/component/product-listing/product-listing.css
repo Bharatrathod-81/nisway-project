@@ -25,6 +25,10 @@
     color: black;
 }
 
+.authors-name{
+    margin-right: 1rem;
+}
+
 .date{
     color: gray;
 }
