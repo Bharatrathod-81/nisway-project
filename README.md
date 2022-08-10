@@ -1,17 +1,18 @@
 # Getting Started with Create React App
 
 ## Features
-- Home page with a list of all content news
-- Single product listing component
+- Home page with a list of all news article
+- Article listing component
 - Header component
 
 ## Pages
 - Home page
-- Single product page
+- Single Article page
 
 ## Using Stack
 - React.js
 - React Router
+- Axios
 - Context API
 
 ## Available Scripts
