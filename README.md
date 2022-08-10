@@ -1,6 +1,19 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+- Home page with a list of all news article
+- Article listing component
+- Header component
+
+## Pages
+- Home page
+- Single Article page
+
+## Using Stack
+- React.js
+- React Router
+- Axios
+- Context API
 
 ## Available Scripts
 
