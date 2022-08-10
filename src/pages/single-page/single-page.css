@@ -1,0 +1,25 @@
+.singleProduct{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-body{
+    width: 65%;
+}
+
+.single-page-heading{
+    text-align: start;
+}
+
+.single-author{
+    display: flex;
+    align-items: flex-start;
+}
+
+.content{
+    text-align: start;
+    display: flex;
+    padding: 1rem;
+    font-size: 22px;
+}

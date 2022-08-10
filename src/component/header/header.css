@@ -1,0 +1,23 @@
+.header-body{
+    margin: 1rem;
+    text-align: start;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    width: 98%;
+}
+
+.logo-body{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.logo{
+    margin-left: 1rem;
+    font-size: 32px;
+}
+
+.logo-heading{
+    margin-bottom: 1rem;
+}
