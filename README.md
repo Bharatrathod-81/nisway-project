@@ -2,6 +2,17 @@
 
 ## Features
 Home page with a list of all content news
+Single product listing component
+Header component
+
+## Pages
+Home page
+Single product page
+
+## Using Stack
+React.js
+React Router
+Context API
 
 ## Available Scripts
 
