@@ -17,9 +17,23 @@
     align-items: flex-start;
 }
 
-.content{
+.article-card-img{
+    width: 100%;
+}
+
+.article-content{
     text-align: start;
     display: flex;
     padding: 1rem;
     font-size: 22px;
+    width: 100%;
 }
+
+.wp-caption{
+    width: 100% !important;
+}
+
+.size-full{
+    width: 100%;
+    height: 80vh;
+} 

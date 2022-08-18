@@ -12,7 +12,9 @@ export const SinglePage = () => {
 
 
     const singleNews = data.find(e => e.id === parseInt(itemId));
-
+    console.log(singleNews?.content.rendered,"////");
+    console.log(singleNews,"-------");
+    console.log("wp-image-2373720");
     return (
         <div className="singleProduct">
             <div className="content-body">
@@ -21,9 +23,9 @@ export const SinglePage = () => {
                     {singleNews?.parsely.meta.author.map(a => <strong key={a.name} className="margin">{a.name}</strong>)}
                     <p className="date margin">{singleNews?.date}</p>
                 </div>
-                <img className="card-img" src={singleNews?.jetpack_featured_media_url} alt="img" />
-                <section className="content">
-                    <p dangerouslySetInnerHTML={{ __html: singleNews?.content.rendered }}></p>
+                <img className="article-card-img" src={singleNews?.jetpack_featured_media_url} alt="img" />
+                <section className="article-content">
+                    <p  dangerouslySetInnerHTML={{ __html: singleNews?.content.rendered }}></p>
                 </section>
             </div>
         </div>
