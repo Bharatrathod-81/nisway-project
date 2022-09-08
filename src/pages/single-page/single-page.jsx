@@ -11,21 +11,19 @@ export const SinglePage = () => {
     const { data } = useNewsData();
 
 
-    const singleNews = data.find(e => e.id === parseInt(itemId));
-    console.log(singleNews?.content.rendered,"////");
-    console.log(singleNews,"-------");
-    console.log("wp-image-2373720");
+    const singleNews = data?.find(e => e.id === parseInt(itemId));
+    
     return (
         <div className="singleProduct">
             <div className="content-body">
-                <h1 className="single-page-heading margin">{singleNews?.title.rendered}</h1>
+                <h1 className="single-page-heading margin">{singleNews?.title?.rendered}</h1>
                 <div className="single-author">
-                    {singleNews?.parsely.meta.author.map(a => <strong key={a.name} className="margin">{a.name}</strong>)}
+                    {singleNews?.parsely?.meta?.author?.map(a => <strong key={a?.name} className="margin">{a?.name}</strong>)}
                     <p className="date margin">{singleNews?.date}</p>
                 </div>
                 <img className="article-card-img" src={singleNews?.jetpack_featured_media_url} alt="img" />
                 <section className="article-content">
-                    <p  dangerouslySetInnerHTML={{ __html: singleNews?.content.rendered }}></p>
+                    <p  dangerouslySetInnerHTML={{ __html: singleNews?.content?.rendered }}></p>
                 </section>
             </div>
         </div>
