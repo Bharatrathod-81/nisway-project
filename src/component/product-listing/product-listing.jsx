@@ -9,11 +9,11 @@ export const ProductListing = ({ data }) => {
                 <Link className="card-body" to={`/singlePage/${e.id}`}>
                     <div className="title-body">
                         <h1 className="heading">{e.title.rendered}</h1>
-                        {e.parsely.meta.author.map(a => <strong className="authors-name">{a.name}</strong>)}
+                        {e?.parsely?.meta?.author?.map(a => <strong className="authors-name">{a.name}</strong>)}
                         <p className="date">{e.date}</p>
                     </div>
                     <div className="excerpt-body">
-                        <p dangerouslySetInnerHTML={{ __html: e.excerpt.rendered.replace('[&hellip;]', '...') }}></p>
+                        <p dangerouslySetInnerHTML={{ __html: e?.excerpt?.rendered?.replace('[&hellip;]', '...') }}></p>
                     </div>
                     <div className="card-img-container">
                         <img className="card-img" src={e.jetpack_featured_media_url} />
